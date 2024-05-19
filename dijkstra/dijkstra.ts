@@ -2,13 +2,13 @@ interface Graph {
     [key: string]: { [key: string]: number };
 }
 
-export function getDijkstraMinPath(distancesGraph: Graph, start:string, end:string) {
+export function getDijkstraMinPath(distancesGraph: Graph, start: string, end: string) {
     const distances: { [key: string]: [number, string] } = {};
 
     for(const node in distancesGraph) {
         distances[node] = [ Infinity, ""];
     }
-    distances[start] = [0, "a"];
+    distances[start] = [0, start];
 
     const nodes = Object.keys(distancesGraph);
 
