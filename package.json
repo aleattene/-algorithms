@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "ts-node dijkstra/dijkstra.ts",
+    "build": "tsc",
+    "test": "tap --show-full-coverage"
+  },
+  "tap": {
+    "typecheck": true,
+    "tsconfig": "tsconfig.json"
+  },
+  "devDependencies": {
+    "tap": "^18.8.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
