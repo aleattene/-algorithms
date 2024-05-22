@@ -8,12 +8,12 @@ import { ShortestPath } from './dijkstra.test';
 let start = "D";
 let end: string;
 
-// t.test('Path from D to A', t => {
-//     end = "A";
-//     const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['D', 'B', 'A'], distance: 5 });
-//     t.end();
-// });
+t.test('Path from D to A', t => {
+    end = "A";
+    const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['D', 'B', 'A'], distance: 5 });
+    t.end();
+});
 
 t.test('Path from D to B', t => {
     end = "B";
@@ -23,7 +23,7 @@ t.test('Path from D to B', t => {
 });
 
 // t.test('Path from D to C', t => {
-//     end = "D";
+//     end = "C";
 //     const minPath = getDijkstraMinPath(distancesGraph, start, end);
 //     t.same(minPath, { path: ['D', 'F', 'C'], distance: 4 });
 //     t.end();
