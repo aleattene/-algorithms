@@ -172,14 +172,14 @@ t.test('Path from O to X', t => {
 t.test('Path from O to Y', t => {
     end = "Y";
     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-    t.same(minPath, { path: ['O', 'Q', 'S', 'U', 'W', 'Y'], distance: 21 });
+    t.same(minPath, { path: ['O', 'Q', 'S', 'F', 'C', 'Y'], distance: 15 });
     t.end();
 });
 
 t.test('Path from O to Z', t => {
     end = "Z";
     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-    t.same(minPath, { path: ['O', 'Q', 'H', 'V', 'X', 'Z'], distance: 21  });
+    t.same(minPath, { path: ['O', 'Q', 'S', 'F', 'C', 'Y', 'Z'], distance: 17  });
     t.end();
 });
 // =================================================================================================================

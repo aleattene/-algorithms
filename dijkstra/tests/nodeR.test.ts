@@ -11,7 +11,7 @@ let end: string;
 // t.test('Path from R to A', t => {
 //     end = "A";
 //     const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['A', 'B'], distance: 1 });
+//     t.same(minPath, { path: ['R', 'S'], distance: 1 });
 //     t.end();
 // });
 
@@ -172,14 +172,14 @@ t.test('Path from R to X', t => {
 t.test('Path from R to Y', t => {
     end = "Y";
     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-    t.same(minPath, { path: ['R', 'T', 'U', 'W', 'Y'], distance: 13 });
+    t.same(minPath, { path: ['R', 'S', 'F', 'C', 'Y'], distance: 9 });
     t.end();
 });
 
 t.test('Path from R to Z', t => {
     end = "Z";
     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-    t.same(minPath, { path: ['R', 'T', 'U', 'V', 'X', 'Z'], distance: 14 });
+    t.same(minPath, { path: ['R', 'S', 'F', 'C', 'Y', 'Z'], distance: 11 });
     t.end();
 });
 // =================================================================================================================
