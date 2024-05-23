@@ -64,12 +64,13 @@ t.test('Path from H to I', t => {
     t.end();
 });
 
-t.test('Path from H to J', t => {
-    end = "J";
-    const minPath = getDijkstraMinPath(distancesGraph, start, end);
-    t.same(minPath, { path: ['H', 'J'], distance: 6 });
-    t.end();
-});
+// Double Results: J-H and J-I-H (distance: 6)
+// t.test('Path from H to J', t => {
+//     end = "J";
+//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
+//     t.same(minPath, { path: ['H', 'J'], distance: 6 });
+//     t.end();
+// });
 
 t.test('Path from H to K', t => {
     end = "K";

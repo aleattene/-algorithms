@@ -8,75 +8,75 @@ import { ShortestPath } from './dijkstra.test';
 let start = "K";
 let end: string;
 
-// t.test('Path from K to A', t => {
-//     end = "A";
-//     const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['A', 'B'], distance: 1 });
-//     t.end();
-// });
+t.test('Path from K to A', t => {
+    end = "A";
+    const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'E', 'B', 'A'], distance: 15 });
+    t.end();
+});
 
-// t.test('Path from K to B', t => {
-//     end = "C";
-//     const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['B', 'C'], distance: 2 });
-//     t.end();
-// });
+t.test('Path from K to B', t => {
+    end = "B";
+    const minPath: ShortestPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'E', 'B'], distance: 14 });
+    t.end();
+});
 
-// t.test('Path from K to C', t => {
-//     end = "D";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['C', 'F', 'D'], distance: 4 });
-//     t.end();
-// });
+t.test('Path from K to C', t => {
+    end = "C";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'C'], distance: 13 });
+    t.end();
+});
 
-// t.test('Path from K to D', t => {
-//     end = "E";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['D', 'E'], distance: 4 });
-//     t.end();
-// });
+t.test('Path from K to D', t => {
+    end = "D";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'D'], distance: 11 });
+    t.end();
+});
 
-// t.test('Path from K to E', t => {
-//     end = "F";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['E', 'F'], distance: 3 });
-//     t.end();
-// });
+t.test('Path from K to E', t => {
+    end = "E";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'E'], distance: 13 });
+    t.end();
+});
 
-// t.test('Path from K to F', t => {
-//     end = "G";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['F', 'G'], distance: 2 });
-//     t.end();
-// });
+t.test('Path from K to F', t => {
+    end = "F";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F'], distance: 10 });
+    t.end();
+});
 
-// t.test('Path from K to G', t => {
-//     end = "H";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['G', 'H'], distance: 4 });
-//     t.end();
-// });
+t.test('Path from K to G', t => {
+    end = "G";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G'], distance: 8 });
+    t.end();
+});
 
-// t.test('Path from K to H', t => {
-//     end = "I";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['H', 'I'], distance: 2 });
-//     t.end();
-// });
+t.test('Path from K to H', t => {
+    end = "H";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'H'], distance: 7 });
+    t.end();
+});
 
-// t.test('Path from K to I', t => {
-//     end = "J";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['I', 'J'], distance: 4 });
-//     t.end();
-// });
+t.test('Path from K to I', t => {
+    end = "I";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I'], distance: 5 });
+    t.end();
+});
 
-// t.test('Path from K to J', t => {
-//     end = "K";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['J', 'K'], distance: 3 });
-//     t.end();
-// });
+t.test('Path from K to J', t => {
+    end = "J";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'J'], distance: 3 });
+    t.end();
+});
 
 t.test('Path from K to L', t => {
     end = "L";
@@ -106,80 +106,80 @@ t.test('Path from K to O', t => {
     t.end();
 });
 
-// t.test('Path from K to P', t => {
-//     end = "P";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['k', 'J', 'Q', 'P'], distance: 9 });
-//     t.end();
-// });
+t.test('Path from K to P', t => {
+    end = "P";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'J', 'Q', 'P'], distance: 9 });
+    t.end();
+});
 
-// t.test('Path from K to Q', t => {
-//     end = "Q";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['K', 'J', 'Q'], distance: 7 });
-//     t.end();
-// });
+t.test('Path from K to Q', t => {
+    end = "Q";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'J', 'Q'], distance: 7 });
+    t.end();
+});
 
-// t.test('Path from K to R', t => {
-//     end = "R";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['K', 'J', 'Q', 'R'], distance: 12 });
-//     t.end();
-// });
+t.test('Path from K to R', t => {
+    end = "R";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'J', 'Q', 'R'], distance: 12 });
+    t.end();
+});
 
-// t.test('Path from K to S', t => {
-//     end = "S";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['k', 'J', 'Q', 'S'], distance: 13 });
-//     t.end();
-// });
+t.test('Path from K to S', t => {
+    end = "S";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'S'], distance: 11 });
+    t.end();
+});
 
-// t.test('Path from K to T', t => {
-//     end = "T";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['k', 'J', 'Q', 'R', 'T'], distance: 14 });
-//     t.end();
-// });
+t.test('Path from K to T', t => {
+    end = "T";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'J', 'Q', 'R', 'T'], distance: 14 });
+    t.end();
+});
 
-// t.test('Path from K to U', t => {
-//     end = "U";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['k', 'I', 'H', 'V', 'U'], distance: 16 });
-//     t.end();
-// });
+t.test('Path from K to U', t => {
+    end = "U";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'S', 'U'], distance: 15 });
+    t.end();
+});
 
-// t.test('Path from K to V', t => {
-//     end = "V";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['K', 'I', 'H', 'V', ], distance: 14 });
-//     t.end();
-// });
+t.test('Path from K to V', t => {
+    end = "V";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'H', 'V', ], distance: 14 });
+    t.end();
+});
 
-// t.test('Path from K to W', t => {
-//     end = "W";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['J', 'H', 'F', 'C', 'Y', 'W'], distance: 19 });
-//     t.end();
-// });
+t.test('Path from K to W', t => {
+    end = "W";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'H', 'V', 'W'], distance: 18 });
+    t.end();
+});
 
-// t.test('Path from K to X', t => {
-//     end = "X";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['K', 'I', 'H', 'V', 'X'], distance: 19 });
-//     t.end();
-// });
+t.test('Path from K to X', t => {
+    end = "X";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'H', 'V', 'X'], distance: 17 });
+    t.end();
+});
 
-// t.test('Path from K to Y', t => {
-//     end = "Y";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['J', 'H', 'F', 'C', 'Y'], distance: 16 });
-//     t.end();
-// });
+t.test('Path from K to Y', t => {
+    end = "Y";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'C', 'Y'], distance: 15 });
+    t.end();
+});
 
-// t.test('Path from K to Z', t => {
-//     end = "Z";
-//     const minPath = getDijkstraMinPath(distancesGraph, start, end);
-//     t.same(minPath, { path: ['K', 'J', 'Q', 'S', 'U', 'V', 'X', 'Z'], distance: 26  });
-//     t.end();
-// });
+t.test('Path from K to Z', t => {
+    end = "Z";
+    const minPath = getDijkstraMinPath(distancesGraph, start, end);
+    t.same(minPath, { path: ['K', 'I', 'G', 'F', 'C', 'Y', 'Z'], distance: 17  });
+    t.end();
+});
 // =================================================================================================================
