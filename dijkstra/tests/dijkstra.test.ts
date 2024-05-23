@@ -7,7 +7,7 @@ export const distancesGraph = {
     C: { A: 4, B: 2, E: 2, F: 3 , Y: 2},
     D: { A: 6, B: 4, E: 4, F: 1, G: 7, U: 6 },
     E: { B: 1, C: 2, D: 4, F: 3, G: 6 },
-    F: { A: 8, D: 1, E: 3, G: 2, H: 5, S: 1 },
+    F: { A: 8, C: 3, D: 1, E: 3, G: 2, H: 5, S: 1 },
     G: { D: 7, E: 6, F: 2, H: 4, I: 3 },
     H: { F: 5, G: 4, I: 2, J: 6 , Q: 4, V: 7},
     I: { G: 3, H: 2, J: 4, K: 5 },
