@@ -1,18 +1,23 @@
 {
-  "scripts": {
-    "start": "ts-node dijkstra/dijkstra.ts",
-    "build": "tsc",
-    "test": "tap --show-full-coverage"
-  },
-  "tap": {
-    "typecheck": true,
-    "tsconfig": "tsconfig.json"
-  },
-  "devDependencies": {
-    "tap": "^18.8.0",
-    "typescript": "^5.4.5"
-  },
-  "dependencies": {
-    "ts-node": "^10.9.2"
-  }
+	"scripts": {
+		"start": "ts-node dijkstra/dijkstra.ts",
+		"build": "tsc",
+		"test": "tap --show-full-coverage",
+		"format": "prettier --write ."
+	},
+	"tap": {
+		"typecheck": true,
+		"tsconfig": "tsconfig.json"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^7.10.0",
+		"@typescript-eslint/parser": "^7.10.0",
+		"eslint": "^8.56.0",
+		"prettier": "3.2.5",
+		"tap": "^19.0.1",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"ts-node": "^10.9.2"
+	}
 }
