@@ -24,13 +24,15 @@ jobs:
             - run: npm ci
             - run: npm run build --if-present
             - run: npm test
-            - name: Verify coverage files
-              run: ls -la ./coverage
+            - name: Verify .tap directory structure
+              run: ls -la .tap
+            - name: Verify report files
+              run: ls -la .tap/report
             - name: Upload coverage reports to Codecov
               uses: codecov/codecov-action@v4.0.1
               with:
                   token: ${{ secrets.CODECOV_TOKEN }}
-                  files: ./coverage/lcov.info
+                  files: .tap/report/lcov.info
                   flags: unittests
                   name: codecov-umbrella
                   fail_ci_if_error: true

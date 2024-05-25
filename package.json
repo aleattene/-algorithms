@@ -2,7 +2,7 @@
 	"scripts": {
 		"start": "ts-node dijkstra/dijkstra.ts",
 		"build": "tsc",
-		"test": "tap --show-full-coverage",
+		"test": "tap --show-full-coverage --coverage-report=lcov",
 		"format": "prettier --write ."
 	},
 	"tap": {
