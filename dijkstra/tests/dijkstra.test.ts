@@ -37,7 +37,8 @@ export interface ShortestPath {
 t.test('Dijkstra Algorithm', (t) => {
 	t.same(true, true);
 	// ERRORS TEST
-	// SAME NODE
-	// VALUE NEGATIVE
+	// SAME NODES
+	// VALUES NEGATIVE
+	// INVALID NODES
 	t.end();
 });
